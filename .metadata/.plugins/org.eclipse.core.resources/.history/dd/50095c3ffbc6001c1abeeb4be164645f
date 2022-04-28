@@ -1,0 +1,16 @@
+package com.example.demo.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class User {
+	boolean is_success;
+	
+	String user_id;
+	
+	String email;
+	
+	String roll_number;
+	
+	
+}

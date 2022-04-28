@@ -1,0 +1,14 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.User;
+
+@Service
+public class UserService {
+
+	public User getUser(String[] data) {
+		User u = new User();
+		
+	}
+}

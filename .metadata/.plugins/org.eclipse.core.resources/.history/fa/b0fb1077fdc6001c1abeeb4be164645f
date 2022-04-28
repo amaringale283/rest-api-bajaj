@@ -1,0 +1,28 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.User;
+
+@Service
+public class UserService {
+
+	public User getUser(String[] data) {
+		User u = new User();
+		String[] numbers;
+		String[] aplhabets;
+		int n_idx = 0;
+		int a_idx = 0;
+		for(int i = 0; i < data.length; i++) {
+			try { 
+				numbers[n_idx] = Integer.parseInt(data[i]);
+				n_idx++;
+			}
+			catch(Exception e) {
+				aplhabets[a_idx] = data[i];
+				a_idx++;
+			}
+		}
+		return u;
+	}
+}
